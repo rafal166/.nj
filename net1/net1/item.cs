@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace net1
 {
-    class przedmiot
+    class item
     {
-        private int waga;
-        private int wartosc;
+        private int weight;
+        private int value;
 
-        public przedmiot(int waga, int wartosc)
+        public item(int weight, int value)
         {
-            this.waga = waga;
-            this.wartosc = wartosc;
+            this.weight = weight;
+            this.value = value;
         }
 
         public int get_weight()
         {
-            return waga;
+            return weight;
         }
 
         public int get_value()
         {
-            return wartosc;
+            return value;
         }
 
     }

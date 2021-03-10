@@ -11,7 +11,7 @@ namespace net1
         static void Main(string[] args)
         {
             RandomNumberGenerator rng = new RandomNumberGenerator(1);
-            przedmiot test = new przedmiot(1, 1);
+            item test = new item(1, 1);
            
         }
     }
