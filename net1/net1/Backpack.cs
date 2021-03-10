@@ -13,7 +13,7 @@ namespace net1
         private int size;
         private int remainingSize;
 
-        Backpack(int newSize) {
+        public Backpack(int newSize) {
             size = newSize;
             remainingSize = newSize;
         }
