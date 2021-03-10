@@ -10,9 +10,20 @@ namespace net1
     {
         static void Main(string[] args)
         {
-            RandomNumberGenerator rng = new RandomNumberGenerator(1);
-            item test = new item(1, 1);
-           
+            int n = 10;
+            int seed = 1;
+
+            RandomNumberGenerator rng = new RandomNumberGenerator(seed);
+            List<item> items = new List<item>();
+            for(int i=0;i<n;i++)
+            {
+                items.Add(new item(rng.nextInt(1, 29), rng.nextInt(1, 29)));
+            }
+
+
+
+
+
         }
     }
 }
