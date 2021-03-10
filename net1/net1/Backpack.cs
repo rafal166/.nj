@@ -9,6 +9,7 @@ namespace net1
 {
     class Backpack
     {
+        private List<item> items = new List<item>();
         private int size;
         private int remainingSize;
 
@@ -16,8 +17,13 @@ namespace net1
             size = newSize;
             remainingSize = newSize;
         }
-        public void addNewItem(int itemSize) {
-            remainingSize -= itemSize;
+        public bool addNewItem(item newItem) {
+            if (newItem.get_weight() > remainingSize)
+                return false;
+            remainingSize -= newItem.get_weight();
+            items.Add(newItem);
+
+            return true;
         }
 
         public int getSize()
