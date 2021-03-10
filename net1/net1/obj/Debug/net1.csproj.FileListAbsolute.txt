@@ -1,0 +1,7 @@
+C:\Users\Adrian\source\repos\.nj\net1\net1\bin\Debug\net1.exe.config
+C:\Users\Adrian\source\repos\.nj\net1\net1\bin\Debug\net1.exe
+C:\Users\Adrian\source\repos\.nj\net1\net1\bin\Debug\net1.pdb
+C:\Users\Adrian\source\repos\.nj\net1\net1\obj\Debug\net1.csprojAssemblyReference.cache
+C:\Users\Adrian\source\repos\.nj\net1\net1\obj\Debug\net1.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\source\repos\.nj\net1\net1\obj\Debug\net1.exe
+C:\Users\Adrian\source\repos\.nj\net1\net1\obj\Debug\net1.pdb
