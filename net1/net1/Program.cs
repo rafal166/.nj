@@ -16,13 +16,7 @@ namespace net1
             RandomNumberGenerator rng = new RandomNumberGenerator(seed);
             List<item> items = new List<item>();
             Backpack bag = new Backpack(size);
-            /*
-            for(int i=0;i<n;i++)
-            {
-                items.Add(new item(rng.nextInt(1, 29), rng.nextInt(1, 29)));
-                bag.addNewItem(items[i]);
-            }
-            */
+
             for (int i = 0; i < n; i++)
             {
                 items.Add(new item(value: rng.nextInt(1, 29)));
