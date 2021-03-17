@@ -11,23 +11,31 @@ namespace net1
         static void Main(string[] args)
         {
             int n = 10;
-            int seed = 2;
-            int size = 100;
+            int seed = 1;
+            int size = 50;
             RandomNumberGenerator rng = new RandomNumberGenerator(seed);
             List<item> items = new List<item>();
             Backpack bag = new Backpack(size);
+            /*
             for(int i=0;i<n;i++)
             {
                 items.Add(new item(rng.nextInt(1, 29), rng.nextInt(1, 29)));
                 bag.addNewItem(items[i]);
             }
+            */
+            for (int i = 0; i < n; i++)
+            {
+                items.Add(new item(value: rng.nextInt(1, 29)));
+            }
+            for (int i = 0; i < n; i++)
+            {
+                items[i].set_weight(rng.nextInt(1, 29));
+                bag.addNewItem(items[i]);
+            }
+
+
             Console.WriteLine(bag.getRemainingSize());
-
-            
-
-
-
-
+            Console.WriteLine(bag.getValue());
 
         }
     }

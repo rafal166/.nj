@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace net1
 {
-    class item
+    public class item
     {
         private int weight;
         private int value;
 
-        public item(int weight, int value)
+        public item(int weight=0, int value=0)
         {
             this.weight = weight;
             this.value = value;
@@ -25,6 +25,16 @@ namespace net1
         public int get_value()
         {
             return value;
+        }
+
+        public void set_weight(int weight)
+        {
+            this.weight = weight;
+        }
+
+        public void set_value(int value)
+        {
+            this.value = value;
         }
 
     }
